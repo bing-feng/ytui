@@ -1,16 +1,16 @@
 
-##一、 Android学习地址
+## 一、 Android学习地址
 
-####1. Android开发指南
+#### 1. Android开发指南
 https://developer.android.google.cn/
-####2. Android-Jetpack
+#### 2. Android-Jetpack
 https://developer.android.google.cn/jetpack
 
-##二、 功能说明
+## 二、 功能说明
 
-####1. 登录
+#### 1. 登录
 
-####2. 元素
+#### 2. 元素
 + 按钮：
   + 按钮形状
   + 按钮尺寸
@@ -24,7 +24,7 @@ https://developer.android.google.cn/jetpack
 + 操作条：上边操作条，下边操作条
 + 导航栏（tab标签）
 
-####3. 组件
+#### 3. 组件
 + 列表：宫格列表；带图标和操作列表；图文列表
 + 卡片：图标小卡片；图文大卡片
 + 表单：	
@@ -43,9 +43,9 @@ https://developer.android.google.cn/jetpack
   + 左右抽屉窗口
 + 布局：左侧导航
 
-####4. 个人中心
+#### 4. 个人中心
 
-####5. 其他功能
+#### 5. 其他功能
 + 消息推送
 + socket应用
 + NFC、VCR、二维码扫描
