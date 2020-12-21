@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -21,7 +21,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/bg_top_3" />
+                android:src="@drawable/bg_top_3"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/colorPrimary"
                 android:text="@string/app_name"
-                android:textSize="32dp" />
+                android:textSize="@dimen/profileTitleSize" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,25 +59,29 @@
                     android:divider="@drawable/divider"
                     android:showDividers="middle">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="关于YTUI"/>
+                        android:text="@string/profile_text1"/>
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="Github"/>
+                        android:text="@string/profile_text2"/>
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv3"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="Android官网"/>
+                        android:text="@string/profile_text3"/>
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tv4"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="Jetpack"/>
+                        android:text="@string/profile_text4"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

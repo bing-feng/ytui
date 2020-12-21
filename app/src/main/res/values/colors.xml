@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#59AFF4</color>
-    <color name="colorPrimaryDark">#0867B3</color>
+    <color name="colorPrimaryDark">#59AFF4</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="transparent">#00000000</color>
+
+    <color name="line">#F0F3F4</color>
+    <color name="active">#D3D2D2</color>
 
     <color name="red">#e54d42</color>
     <color name="orange">#f37b1d</color>
@@ -20,6 +23,11 @@
     <color name="gray">#aaaaaa</color>
     <color name="black">#333333</color>
     <color name="white">#ffffff</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_a200">#FF40C4FF</color>
+    <color name="light_blue_a400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 
 
 </resources>

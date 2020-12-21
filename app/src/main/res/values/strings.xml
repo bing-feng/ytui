@@ -5,4 +5,74 @@
     <string name="title_dashboard">组件</string>
     <string name="title_notifications">个人中心</string>
 
+
+    <string name="home_text1">按钮</string>
+    <string name="home_remark1">按钮尺寸、形状、颜色和带图标按钮等</string>
+    <string name="home_text2">图标</string>
+    <string name="home_remark2">一些常用图标可直接使用</string>
+    <string name="home_text3">操作条</string>
+    <string name="home_remark3">分上边操作条和下边操作条</string>
+    <string name="home_text4">导航栏</string>
+    <string name="home_remark4">tab标签式的导航栏</string>
+
+
+    <string name="dash_text1">列表</string>
+    <string name="dash_remark1">宫格列表、带图标和操作列表、图文列表等</string>
+    <string name="dash_text2">卡片</string>
+    <string name="dash_remark2">图标小卡片、图文大卡片等</string>
+    <string name="dash_text3">表单</string>
+    <string name="dash_remark3">表单常用的普通输入框、日期选择器、图片上传等</string>
+    <string name="dash_text4">轮播</string>
+    <string name="dash_remark4">顶部图片轮播设计</string>
+    <string name="dash_text5">模态框</string>
+    <string name="dash_remark5">普通模态框、底部窗口、带按钮模态框等</string>
+    <string name="dash_text6">布局</string>
+    <string name="dash_remark6">左侧导航应用</string>
+
+
+    <string name="profile_text1">关于YTUI</string>
+    <string name="profile_text2">Github</string>
+    <string name="profile_text3">Android官网</string>
+    <string name="profile_text4">Jetpack</string>
+
+
+    <string name="buttons_title">按钮组</string>
+    <string name="buttons_title_1">按钮颜色</string>
+    <string name="buttons_title_2">镂空按钮</string>
+    <string name="buttons_title_3">块状按钮</string>
+    <string name="buttons_title_4">图标按钮</string>
+
+    <string name="red">红色</string>
+    <string name="orange">橙色</string>
+    <string name="yellow">黄色</string>
+    <string name="olive">橄榄</string>
+    <string name="green">绿色</string>
+    <string name="cyan">天蓝</string>
+    <string name="blue">蓝色</string>
+    <string name="purple">紫色</string>
+    <string name="mauve">浅紫</string>
+    <string name="pink">粉色</string>
+    <string name="brown">棕色</string>
+    <string name="grey">灰色</string>
+    <string name="gray">草灰</string>
+    <string name="black">黑色</string>
+    <string name="white">白色</string>
+    <string name="light_blue_600">蓝-6</string>
+    <string name="light_blue_900">蓝-9</string>
+    <string name="light_blue_a200">蓝-2</string>
+    <string name="light_blue_a400">蓝-4</string>
+    <string name="black_overlay">沉灰</string>
+
+    <string name="icons_title">图标</string>
+    <string name="bars_title">操作条</string>
+    <string name="tabs_title">导航栏</string>
+    <string name="profile_title">关于YTUI</string>
+    <string name="profile_content">
+        \n\t\t YTUI，是个人学习过程中积累的一套基于Jetpack的Android UI组件，采用Kotlin语言开发，主要包含按钮、图标、卡片、表单等常用组件的UI设计。
+        \n\t\t Socket应用、NFC、VCR、二维码扫描等功能会在日后学习积累过程中逐渐完善，更加丰富更多功能。
+    </string>
+    <string name="profile_content1">Github地址：  https://github.com/bing-feng/ytui</string>
+    <string name="profile_content2">Android官网：https://developer.android.google.cn/</string>
+    <string name="profile_content3">Jetpack地址：https://developer.android.google.cn/jetpack</string>
+
 </resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".ui.pages.ButtonsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navBarTopHeight"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_arrow_left_bold"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/cardTitleSize"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:text="@string/buttons_title" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/navBarTopHeight">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cardTitleSize"
+                android:layout_margin="10dp"
+                android:text="@string/buttons_title_1" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:useDefaultMargins="true" >
+
+                <Button style="@style/btn" android:textColor="@color/black" android:background="@drawable/button_bg_white" android:text="@string/white" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_red" android:text="@string/red" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_orange" android:text="@string/orange" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_yellow" android:text="@string/yellow" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_olive" android:text="@string/olive" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_green" android:text="@string/green" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_cyan" android:text="@string/cyan" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_blue" android:text="@string/blue" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_purple" android:text="@string/purple" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_mauve" android:text="@string/mauve" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_pink" android:text="@string/pink" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_brown" android:text="@string/brown" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_grey" android:text="@string/grey" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_gray" android:text="@string/gray" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_black" android:text="@string/black" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_black_overlay" android:text="@string/black_overlay" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_light_blue_600" android:text="@string/light_blue_600" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_light_blue_900" android:text="@string/light_blue_900" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_light_blue_a200" android:text="@string/light_blue_a200" />
+                <Button style="@style/btn" android:background="@drawable/button_bg_light_blue_a400" android:text="@string/light_blue_a400" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cardTitleSize"
+                android:layout_margin="10dp"
+                android:text="@string/buttons_title_2" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:useDefaultMargins="true" >
+
+                <Button style="@style/btn" android:textColor="@color/red" android:background="@drawable/button_bd_red" android:text="@string/red" />
+                <Button style="@style/btn" android:textColor="@color/orange" android:background="@drawable/button_bd_orange" android:text="@string/orange" />
+                <Button style="@style/btn" android:textColor="@color/yellow" android:background="@drawable/button_bd_yellow" android:text="@string/yellow" />
+                <Button style="@style/btn" android:textColor="@color/olive" android:background="@drawable/button_bd_olive" android:text="@string/olive" />
+                <Button style="@style/btn" android:textColor="@color/green" android:background="@drawable/button_bd_green" android:text="@string/green" />
+                <Button style="@style/btn" android:textColor="@color/cyan" android:background="@drawable/button_bd_cyan" android:text="@string/cyan" />
+                <Button style="@style/btn" android:textColor="@color/blue" android:background="@drawable/button_bd_blue" android:text="@string/blue" />
+                <Button style="@style/btn" android:textColor="@color/purple" android:background="@drawable/button_bd_purple" android:text="@string/purple" />
+                <Button style="@style/btn" android:textColor="@color/mauve" android:background="@drawable/button_bd_mauve" android:text="@string/mauve" />
+                <Button style="@style/btn" android:textColor="@color/pink" android:background="@drawable/button_bd_pink" android:text="@string/pink" />
+                <Button style="@style/btn" android:textColor="@color/brown" android:background="@drawable/button_bd_brown" android:text="@string/brown" />
+                <Button style="@style/btn" android:textColor="@color/grey" android:background="@drawable/button_bd_grey" android:text="@string/grey" />
+                <Button style="@style/btn" android:textColor="@color/gray" android:background="@drawable/button_bd_gray" android:text="@string/gray" />
+                <Button style="@style/btn" android:textColor="@color/black" android:background="@drawable/button_bd_black" android:text="@string/black" />
+                <Button style="@style/btn" android:textColor="@color/black_overlay" android:background="@drawable/button_bd_black_overlay" android:text="@string/black_overlay" />
+                <Button style="@style/btn" android:textColor="@color/light_blue_600" android:background="@drawable/button_bd_light_blue_600" android:text="@string/light_blue_600" />
+                <Button style="@style/btn" android:textColor="@color/light_blue_900" android:background="@drawable/button_bd_light_blue_900" android:text="@string/light_blue_900" />
+                <Button style="@style/btn" android:textColor="@color/light_blue_a200" android:background="@drawable/button_bd_light_blue_a200" android:text="@string/light_blue_a200" />
+                <Button style="@style/btn" android:textColor="@color/light_blue_a400" android:background="@drawable/button_bd_light_blue_a400" android:text="@string/light_blue_a400" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cardTitleSize"
+                android:layout_margin="10dp"
+                android:text="@string/buttons_title_3" />
+            <Button style="@style/btn_block" android:textColor="@color/red" android:background="@drawable/button_bd_red" android:text="@string/red" />
+            <Button style="@style/btn_block" android:textColor="@color/cyan" android:background="@drawable/button_bd_cyan" android:text="@string/cyan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cardTitleSize"
+                android:layout_margin="10dp"
+                android:text="@string/buttons_title_4" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:useDefaultMargins="true" >
+
+                <ImageButton style="@style/btn_image" android:src="@drawable/icon_ok" android:tint="@color/white" android:background="@drawable/button_bg_cyan" tools:ignore="ContentDescription" />
+                <ImageButton style="@style/btn_image" android:src="@drawable/icon_download" android:tint="@color/white" android:background="@drawable/button_bg_pink" tools:ignore="ContentDescription" />
+                <ImageButton style="@style/btn_image" android:src="@drawable/icon_arrow_down_bold" android:tint="@color/mauve" android:background="@drawable/button_bd_mauve" tools:ignore="ContentDescription" />
+                <ImageButton style="@style/btn_image" android:src="@drawable/icon_password" android:tint="@color/pink" android:background="@drawable/button_bd_pink" tools:ignore="ContentDescription" />
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
