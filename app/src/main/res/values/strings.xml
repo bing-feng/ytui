@@ -75,4 +75,13 @@
     <string name="profile_content2">Android官网：https://developer.android.google.cn/</string>
     <string name="profile_content3">Jetpack地址：https://developer.android.google.cn/jetpack</string>
 
+
+    <string name="tab_text1">选项一</string>
+    <string name="tab_text2">选项二</string>
+    <string name="tab_text3">选项三</string>
+    <string name="tab_text4">选项四</string>
+    <string name="tab_text5">选项五</string>
+    <string name="tab_text6">选项六</string>
+    <string name="tab_text7">选项七</string>
+
 </resources>

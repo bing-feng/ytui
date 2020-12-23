@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pages_bars"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.pages.BarsActivity">
@@ -50,6 +51,198 @@
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navBarTopHeight"
+            android:background="@color/purple"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_profile"
+                    app:tint="@color/white"
+                    android:layout_weight="0.1"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/bars_title"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cardTitleSize" />
+
+                <ImageView
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_scan"
+                    app:tint="@color/white"
+                    android:layout_weight="0.1"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navBarTopHeight"
+            android:background="@color/cyan"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_profile"
+                    app:tint="@color/white"
+                    android:layout_weight="0.1"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/bars_title"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cardTitleSize" />
+
+                <ImageView
+                    android:id="@+id/btn_more"
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_more"
+                    app:tint="@color/white"
+                    android:layout_weight="0.1"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navBarTopHeight"
+            android:background="@color/orange"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.9"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="10dp"
+                    android:inputType="textPersonName"
+                    android:hint="@string/bars_title"
+                    android:background="@drawable/button_bd_white"
+                    android:importantForAutofill="no" />
+
+                <ImageView
+                    android:layout_width="@dimen/navBarTopSize"
+                    android:layout_height="@dimen/navBarTopSize"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_search"
+                    app:tint="@color/white"
+                    android:layout_weight="0.1"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout3">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navBarTopHeight"
+            android:background="@color/pink"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

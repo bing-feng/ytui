@@ -51,4 +51,18 @@
         <item name="android:layout_gravity">start</item>
     </style>
 
+    <style name="tabStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabSelectedTextColor">@color/green</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="tabIndicatorStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorColor">@color/green</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/green</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
 </resources>
