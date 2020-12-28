@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
+import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import com.winton.ytui.R
 import com.winton.ytui.ui.pages.BarsActivity
@@ -26,17 +27,19 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<CardView>(R.id.cardView1).setOnClickListener {
-            startActivity(Intent(this.context, ButtonsActivity::class.java))
+
+        arrayOf(R.id.cardView1, R.id.cardView2, R.id.cardView3, R.id.cardView4).forEach {
+            item -> when(item) {
+                R.id.cardView1 -> openActivity(view, item, ButtonsActivity::class.java)
+                R.id.cardView2 -> openActivity(view, item, IconsActivity::class.java)
+                R.id.cardView3 -> openActivity(view, item, BarsActivity::class.java)
+                R.id.cardView4 -> openActivity(view, item, TabsActivity::class.java)
+            }
         }
-        view.findViewById<CardView>(R.id.cardView2).setOnClickListener {
-            startActivity(Intent(this.context, IconsActivity::class.java))
-        }
-        view.findViewById<CardView>(R.id.cardView3).setOnClickListener {
-            startActivity(Intent(this.context, BarsActivity::class.java))
-        }
-        view.findViewById<CardView>(R.id.cardView4).setOnClickListener {
-            startActivity(Intent(this.context, TabsActivity::class.java))
+    }
+    private fun openActivity(view: View, id: Int, targetActivityClass: Class<*>) {
+        view.findViewById<CardView>(id).setOnClickListener {
+            startActivity(Intent(this.context, targetActivityClass))
         }
     }
 }

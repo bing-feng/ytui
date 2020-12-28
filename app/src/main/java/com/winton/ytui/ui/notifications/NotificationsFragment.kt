@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.winton.ytui.R
 import com.winton.ytui.ui.pages.*
@@ -24,17 +25,19 @@ class NotificationsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.tv1).setOnClickListener {
-            startActivity(Intent(this.context, ProfileActivity::class.java))
+
+        arrayOf(R.id.tv1, R.id.tv2, R.id.tv3, R.id.tv4).forEach {
+            item -> when(item) {
+                R.id.tv1 -> openActivity(view, item, ProfileActivity::class.java)
+                R.id.tv2 -> openActivity(view, item, ProfileActivity::class.java)
+                R.id.tv3 -> openActivity(view, item, ProfileActivity::class.java)
+                R.id.tv4 -> openActivity(view, item, ProfileActivity::class.java)
+            }
         }
-        view.findViewById<TextView>(R.id.tv2).setOnClickListener {
-            startActivity(Intent(this.context, ProfileActivity::class.java))
-        }
-        view.findViewById<TextView>(R.id.tv3).setOnClickListener {
-            startActivity(Intent(this.context, ProfileActivity::class.java))
-        }
-        view.findViewById<TextView>(R.id.tv4).setOnClickListener {
-            startActivity(Intent(this.context, ProfileActivity::class.java))
+    }
+    private fun openActivity(view: View, id: Int, targetActivityClass: Class<*>) {
+        view.findViewById<TextView>(id).setOnClickListener {
+            startActivity(Intent(this.context, targetActivityClass))
         }
     }
 }

@@ -35,7 +35,7 @@ class IconsActivity : AppCompatActivity() {
             , R.drawable.icon_login, R.drawable.icon_logout, R.drawable.icon_minus_bold, R.drawable.icon_more
             , R.drawable.icon_ok, R.drawable.icon_password, R.drawable.icon_profile, R.drawable.icon_question
             , R.drawable.icon_refresh, R.drawable.icon_scan, R.drawable.icon_success, R.drawable.icon_tel
-            , R.drawable.icon_tool, R.drawable.icon_upload, R.drawable.icon_warning)
+            , R.drawable.icon_tool, R.drawable.icon_upload, R.drawable.icon_warning, R.drawable.icon_search)
         var texts = arrayOf("icon_add","icon_add_bold","icon_add_circle","icon_arrow_down_bold",
             "icon_arrow_down_filling","icon_arrow_left_bold","icon_arrow_left_filling",
             "icon_arrow_right_bold","icon_arrow_right_filling","icon_arrow_up_bold",
@@ -46,7 +46,7 @@ class IconsActivity : AppCompatActivity() {
             "icon_login","icon_logout","icon_minus_bold","icon_more",
             "icon_ok","icon_password","icon_profile","icon_question",
             "icon_refresh","icon_scan","icon_success","icon_tel",
-            "icon_tool","icon_upload","icon_warning")
+            "icon_tool","icon_upload","icon_warning", "icon_search")
         for ((i, v) in icons.withIndex())  {
             var item: HashMap<String, Any>  = HashMap<String, Any>()
             item["text"] = texts[i]
