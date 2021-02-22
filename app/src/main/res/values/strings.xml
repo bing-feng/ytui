@@ -101,4 +101,29 @@
     <string name="layout_menu6">退出登录</string>
 
 
+    <string name="forms_txt1">普通输入框</string>
+    <string name="forms_txt2">密码框</string>
+    <string name="forms_txt3">数字输入框</string>
+    <string name="forms_txt4">Email</string>
+    <string name="forms_txt5">电话</string>
+    <string name="forms_txt6">城市选择器</string>
+    <string name="forms_txt61">省市区三级联动</string>
+    <string name="forms_txt7">日期选择器</string>
+    <string name="forms_txt8">时间选择器</string>
+    <string name="forms_txt9">单选</string>
+    <string name="forms_txt10">多选</string>
+    <string name="forms_txt11">多行文本多行文本多行文本</string>
+    <string name="forms_hint1">普通输入框（必填）</string>
+    <string name="forms_hint2">密码框（必填）</string>
+    <string name="forms_hint3">数字输入框（必填）</string>
+    <string name="forms_hint4">Email（必填）</string>
+    <string name="forms_hint5">电话（必填）</string>
+    <string name="forms_hint6">城市选择器</string>
+    <string name="forms_hint61">省市区三级联动</string>
+    <string name="forms_hint7">日期选择器</string>
+    <string name="forms_hint8">时间选择器</string>
+    <string name="forms_hint9">单选</string>
+    <string name="forms_hint10">多选</string>
+    <string name="forms_hint11">多行文本多行文本多行文本</string>
+
 </resources>

@@ -17,6 +17,11 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.DefaultCityPickerTheme" parent="DefaultCityPickerTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 
     <style name="btn">
@@ -63,6 +68,46 @@
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabSelectedTextColor">@color/green</item>
         <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:background">@drawable/input_bg_gray</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="form_title">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+    <style name="form_input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="form_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingEnd">10dp</item>
     </style>
 
 </resources>

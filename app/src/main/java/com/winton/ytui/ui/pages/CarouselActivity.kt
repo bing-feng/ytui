@@ -17,6 +17,9 @@ class CarouselActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pages_carousel)
 
+        findViewById<ImageView>(R.id.image_back).setOnClickListener {
+            finish()
+        }
         initBanner();
     }
     private fun initBanner() {

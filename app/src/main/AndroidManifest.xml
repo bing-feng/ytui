@@ -40,7 +40,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.pages.FormsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.DefaultCityPickerTheme" />
         <activity
             android:name=".ui.pages.ModalActivity"
             android:theme="@style/AppTheme.NoActionBar" />

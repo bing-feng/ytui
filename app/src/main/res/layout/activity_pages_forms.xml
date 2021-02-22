@@ -52,4 +52,141 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/navBarTopHeight">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView1" style="@style/form_title" android:text="@string/forms_txt1" />
+                <EditText android:id="@+id/editText1" style="@style/form_input" android:inputType="textPersonName"
+                    android:hint="@string/forms_hint1" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView2" style="@style/form_title" android:text="@string/forms_txt2" />
+                <EditText
+                    android:id="@+id/editTextPassword" style="@style/form_input" android:inputType="textPassword"
+                    android:hint="@string/forms_hint2" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView3" style="@style/form_title" android:text="@string/forms_txt3" />
+                <EditText
+                    android:id="@+id/editTextNumber" style="@style/form_input" android:inputType="number"
+                    android:hint="@string/forms_hint3" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView4" style="@style/form_title" android:text="@string/forms_txt4" />
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress" style="@style/form_input" android:inputType="textEmailAddress"
+                    android:hint="@string/forms_hint4" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView5" style="@style/form_title" android:text="@string/forms_txt5" />
+                <EditText
+                    android:id="@+id/editTextPhone" style="@style/form_input" android:inputType="phone"
+                    android:hint="@string/forms_hint5" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView6" style="@style/form_title" android:text="@string/forms_txt6" />
+                <EditText
+                    android:id="@+id/editTextTextPostalAddress" style="@style/form_input" android:inputType="textPostalAddress"
+                    android:hint="@string/forms_hint6" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView61" style="@style/form_title" android:text="@string/forms_txt61" />
+                <EditText
+                    android:id="@+id/editTextTextPostalAddress1" style="@style/form_input" android:inputType="textPostalAddress"
+                    android:hint="@string/forms_hint61" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView7" style="@style/form_title" android:text="@string/forms_txt7" />
+                <EditText
+                    android:id="@+id/editTextDate" style="@style/form_input" android:inputType="date"
+                    android:hint="@string/forms_hint7" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView8" style="@style/form_title" android:text="@string/forms_txt8" />
+                <EditText
+                    android:id="@+id/editTextTime" style="@style/form_input" android:inputType="time"
+                    android:hint="@string/forms_hint8" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView9" style="@style/form_title" android:text="@string/forms_txt9" />
+                <RadioGroup
+                    android:layout_gravity="start"
+                    android:orientation="horizontal" style="@style/form_content" >
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/black" />
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/green" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView10" style="@style/form_title" android:text="@string/forms_txt10" />
+                <LinearLayout
+                    style="@style/form_content"
+                    android:orientation="horizontal" >
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/red" />
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/green" />
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blue" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:id="@+id/textView11" style="@style/form_title" android:text="@string/forms_txt11" />
+                <EditText
+                    android:id="@+id/editTextTextMultiLine" style="@style/form_input" android:gravity="start|top"
+                    android:hint="@string/forms_hint11" android:inputType="textMultiLine" android:autofillHints="0" tools:ignore="LabelFor" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
